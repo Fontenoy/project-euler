@@ -1,0 +1,26 @@
+/* sum of even numbers in finabacchi
+set5 variables for traversing to 4 million, use a while loop
+holder VAR to contain next in sequence so as to not overwrite
+values while swapping for next in sequence. Use modulos to deternine
+even valued terms in sequence and total as appropriate
+*/
+
+
+
+
+
+var first = 0;
+var second = 1;
+var holder = 0;
+var sum = 0;
+
+while (second < 4000000){
+    if (second % 2 === 0){
+        sum += second;
+        }
+    holder = first + second;
+    first = second;
+    second = holder;
+    };
+
+console.log(sum);
