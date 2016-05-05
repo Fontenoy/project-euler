@@ -1,0 +1,22 @@
+
+/* 	Find the sum of all the multiples of 3 or 5 below 1000.
+	Use modulos to determine if integer is a multiple of either 
+	if true.. increment total. loop through until max is reached
+	return totoal and print to screen. 
+*/
+
+
+
+var sum = 0;
+var input = 1000;
+var sumup = function(input){
+for (var i = 0; i < input; i++)
+    if ((i % 3 === 0) || (i % 5 === 0)){
+        sum += i;
+        
+        };
+    return sum;
+};
+var result = sumup(input);
+console.log(result);
+
